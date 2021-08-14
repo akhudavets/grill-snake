@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.battlesnake</groupId>
-    <artifactId>starter-snake-java</artifactId>
+    <groupId>com.akhudavets</groupId>
+    <artifactId>grill-snake</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>starter-snake-java</name>
-    <description>Battlesnake starter snake written in Java!</description>
+    <name>grill-snake</name>
+    <description>Andrei's version of a battle snake!</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -17,25 +17,25 @@
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
-            <version>2.7.2</version>
+            <version>2.9.3</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.10.4</version>
+            <version>2.12.4</version>
         </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version>
+            <version>1.7.32</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.2.0</version>
+            <version>5.7.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -50,7 +50,7 @@
                     <arguments>
                         <argument>-classpath</argument>
                         <classpath/>
-                        <argument>com.battlesnake.starter.Snake</argument>
+                        <argument>com.akhudavets.battlesnake.Snake</argument>
                     </arguments>
                 </configuration>
             </plugin>
@@ -94,14 +94,14 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        com.battlesnake.starter.Snake
+                                        com.akhudavets.battlesnake.Snake
                                     </mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
-                            <finalName>starter-snake-java</finalName>
+                            <finalName>grill-snake</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>

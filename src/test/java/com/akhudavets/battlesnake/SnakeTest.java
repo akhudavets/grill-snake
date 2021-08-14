@@ -1,4 +1,4 @@
-package com.battlesnake.starter;
+package com.akhudavets.battlesnake;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -33,9 +33,11 @@ public class SnakeTest {
         
         
         Map<String, String> response = handler.index();
-        assertEquals("#888888", response.get("color"));
-        assertEquals("default", response.get("headType"));
-        assertEquals("default", response.get("tailType"));
+        assertEquals("1", response.get("apiversion"));
+        assertEquals("akhudavets", response.get("author"));
+        assertEquals("#8ed672", response.get("color"));
+        assertEquals("evil", response.get("head"));
+        assertEquals("small-rattle", response.get("tail"));
     }
 
     @Test

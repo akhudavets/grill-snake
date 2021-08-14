@@ -1,4 +1,4 @@
-package com.battlesnake.starter;
+package com.akhudavets.battlesnake;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -17,10 +17,8 @@ import static spark.Spark.post;
 import static spark.Spark.get;
 
 /**
- * This is a simple Battlesnake server written in Java.
- * 
- * For instructions see
- * https://github.com/BattlesnakeOfficial/starter-snake-java/README.md
+ * Andrei's version of a battle snake.
+ *
  */
 public class Snake {
     private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
@@ -101,10 +99,10 @@ public class Snake {
         public Map<String, String> index() {         
             Map<String, String> response = new HashMap<>();
             response.put("apiversion", "1");
-            response.put("author", "");           // TODO: Your Battlesnake Username
-            response.put("color", "#888888");     // TODO: Personalize
-            response.put("head", "default");  // TODO: Personalize
-            response.put("tail", "default");  // TODO: Personalize
+            response.put("author", "akhudavets");
+            response.put("color", "#8ed672");
+            response.put("head", "evil");
+            response.put("tail", "small-rattle");
             return response;
         }
 
